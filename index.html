@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body data-theme="light">
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 z-10 p-3 bg-gray-100 shadow">
+        <div class="navbar-start">
+            <a class="text-2xl font-bold px-6">
+                <span class="text-blue-300">Login</span>
+            </a>
+        </div>
+        <div class="navbar-center">
+            <a class="text-2xl font-bold px-6">
+                <span class="text-accent">Home</span>
+            </a>
+        </div>
+        <div class="navbar-end">
+            <a class="text-2xl font-bold px-6">
+                <span class="text-red-300">Logout</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- form login -->
+    <div class="flex flex-col justify-center bg-base-100 p-20">
+        <div class="w-full p-6 m-auto rounded-lg shadow-md lg:max-w-lg bg-base-200">
+            <h1 class="text-3xl font-semibold text-center text-accent-focus">
+                Log In
+            </h1>
+
+            <form class="space-y-4">
+                <div>
+                    <label class="label">
+                        <span class="text-base label-text">Email</span>
+                    </label>
+                    <input type="text" placeholder="Enter Email" class="w-full input input-bordered input-accent" />
+                </div>
+                <div>
+                    <label class="label">
+                        <span class="text-base label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="Enter Password"
+                        class="w-full input input-bordered input-accent" />
+                </div>
+                <div>
+                    <button class="btn btn-accent w-full mt-5">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div id="PAGE-HOME" class="p-5">
+        <main class="grid grid-cols-2 gap-5 my-8 bg-white px-10">
+            <!-- card 1 -->
+            <div class="card bg-gray-100 shadow-2xl p-5 flex flex-row ">
+                <div class="flex flex-1">
+                    <img src="https://picsum.photos/seed/DXQs6olFa/100/100" alt="product image" class="w-3/4" />
+                </div>
+                <div class="flex flex-1 flex-col ml-10">
+                    <b class="mb-5">Pedro</b>
+                    <p>
+                        Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                        denuo
+                        dedico.
+                    </p>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card bg-gray-100 shadow-2xl p-5 flex flex-row">
+                <div class="flex flex-1">
+                    <img src="https://picsum.photos/seed/DXQs6olFa/100/100" alt="product image" />
+                </div>
+                <div class="flex flex-1 flex-col ml-10">
+                    <b class="mb-5">Cedroa</b>
+                    <p>
+                        Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                        denuo
+                        dedico.
+                    </p>
+                </div>
+            </div>
+            <!-- end of row -->
+        </main>
+    </div>
+</body>
+
+</html>

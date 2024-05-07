@@ -44,13 +44,12 @@ Demo ini menggunakan Vite dengan template React sebagai permulaannya
 1. `cd <nama_folder>`
 1. `npm install`
 1. `npm run dev`
-1. Modifikasi kode dengan langkah sebagai berikut:
-1. Ganti Title dan Tambahkan script untuk CSS yang dibutuhkan (`index.html`)
-1. Hapus file src/index.css
+1. Ganti Title dan Tambahkan script untuk CSS yang dibutuhkan di `index.html`
+1. Hapus seluruh code yang ada di dalam file src/index.css (file jangan dihapus, akan digunakan ketika mau install framework CSS tailwind etc)
 1. Hapus file src/App.css
 1. Hapus seluruh code yang ada di dalam function App
 1. Hapus seluruh import yang tidak digunakan
-1. Copy isi dari body yang ada di template (`index.html`) ke `src/App.jsx`
+1. Copy isi dari body yang ada di template (`template.html`) ke `src/App.jsx`
 1. Ganti cara untuk melakukan comment (dari HTML ke JSX)
 1. Ganti cara untuk menggunakan class (class -> className)
     

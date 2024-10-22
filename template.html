@@ -4,93 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
-<body data-theme="light">
-    <!-- navbar -->
-    <nav class="navbar sticky top-0 z-10 p-3 bg-gray-100 shadow">
-        <div class="navbar-start">
-            <a class="text-2xl font-bold px-6">
-                <span class="text-blue-300">Login</span>
-            </a>
-        </div>
-        <div class="navbar-center">
-            <a class="text-2xl font-bold px-6">
-                <span class="text-accent">Home</span>
-            </a>
-        </div>
-        <div class="navbar-end">
-            <a class="text-2xl font-bold px-6">
-                <span class="text-red-300">Logout</span>
-            </a>
-        </div>
-    </nav>
+<body>
+    <div class="p-5">
+        <!-- navbar -->
+        <nav
+            class="sticky top-0 z-10 p-3 bg-purple-400 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+            <div>
+                <a class="text-2xl font-bold px-6 cursor-pointer">
+                    <span>Home</span>
+                </a>
 
-    <!-- form login -->
-    <div class="flex flex-col justify-center bg-base-100 p-20">
-        <div class="w-full p-6 m-auto rounded-lg shadow-md lg:max-w-lg bg-base-200">
-            <h1 class="text-3xl font-semibold text-center text-accent-focus">
-                Log In
-            </h1>
+                <a class="text-2xl font-bold px-6 cursor-pointer">
+                    <span>Front-end Intro</span>
+                </a>
 
-            <form class="space-y-4">
-                <div>
-                    <label class="label">
-                        <span class="text-base label-text">Email</span>
-                    </label>
-                    <input type="text" placeholder="Enter Email" class="w-full input input-bordered input-accent" />
-                </div>
-                <div>
-                    <label class="label">
-                        <span class="text-base label-text">Password</span>
-                    </label>
-                    <input type="password" placeholder="Enter Password"
-                        class="w-full input input-bordered input-accent" />
-                </div>
-                <div>
-                    <button class="btn btn-accent w-full mt-5">Log In</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- home -->
-    <div id="PAGE-HOME" class="p-5">
-        <main class="grid grid-cols-2 gap-5 my-8 bg-white px-10">
-            <!-- card 1 -->
-            <div class="card bg-gray-100 shadow-2xl p-5 flex flex-row ">
-                <div class="flex flex-1">
-                    <img src="https://picsum.photos/seed/DXQs6olFa/100/100" alt="product image" class="w-3/4" />
-                </div>
-                <div class="flex flex-1 flex-col ml-10">
-                    <b class="mb-5">Pedro</b>
-                    <p>
-                        Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
-                        denuo
-                        dedico.
-                    </p>
-                </div>
+                <a class="text-2xl font-bold px-6 cursor-pointer">
+                    <span>Logout</span>
+                </a>
             </div>
+        </nav>
+        <br />
 
-            <!-- card 2 -->
-            <div class="card bg-gray-100 shadow-2xl p-5 flex flex-row">
-                <div class="flex flex-1">
-                    <img src="https://picsum.photos/seed/DXQs6olFa/100/100" alt="product image" />
-                </div>
-                <div class="flex flex-1 flex-col ml-10">
-                    <b class="mb-5">Cedroa</b>
-                    <p>
-                        Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
-                        denuo
-                        dedico.
-                    </p>
-                </div>
+        <!-- login -->
+        <div class="min-h-screen flex items-center justify-center w-full">
+            <div
+                class="rounded-lg px-8 py-6 w-1/3 bg-blue-400 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                <h1 class="text-2xl font-bold text-center mb-4">Login</h1>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium ">Email
+                            Address</label>
+                        <input type="email" id="email"
+                            class="rounded-2xl w-full px-3 py-2 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+                            placeholder="your@email.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-medium">Password</label>
+                        <input type="password" id="password"
+                            class="rounded-2xl w-full px-3 py-2 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+                            placeholder="Enter your password">
+                    </div>
+                    <button
+                        class="w-full mt-5 justify-center py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-gray-700 hover:bg-black shadow-[2px_2px_0px_rgba(0,0,0,1)]">Login</button>
+                </form>
             </div>
-            <!-- end of row -->
-        </main>
+        </div>
+
+        <!-- home -->
+        <div id="PAGE-HOME" class="min-h-screen flex items-center justify-center">
+            <main class="my-5 bg-white grid grid-cols-4 gap-5">
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQQbzps8XSosQZykNWTQrKkxxz6A6SIVQ0r8gE_zvzbRQ5yHzdHkqvKHeUxmcDipAcp3RIdYzsPHPhamQnAVTxgpkl-Cht8p0pfYWarYZ6ITjj6ws1cu15QVTs6a7D8_xCyntYHmwvW1M3EXytrWMFlPhzO8.jpg?r=860"
+                            alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Queen of Tears</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-blue-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://wallpapercave.com/wp/wp13913551.jpg" alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Parasyte : The Grey</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQQbzps8XSosQZykNWTQrKkxxz6A6SIVQ0r8gE_zvzbRQ5yHzdHkqvKHeUxmcDipAcp3RIdYzsPHPhamQnAVTxgpkl-Cht8p0pfYWarYZ6ITjj6ws1cu15QVTs6a7D8_xCyntYHmwvW1M3EXytrWMFlPhzO8.jpg?r=860"
+                            alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Queen of Tears</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-blue-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://wallpapercave.com/wp/wp13913551.jpg" alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Parasyte : The Grey</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQQbzps8XSosQZykNWTQrKkxxz6A6SIVQ0r8gE_zvzbRQ5yHzdHkqvKHeUxmcDipAcp3RIdYzsPHPhamQnAVTxgpkl-Cht8p0pfYWarYZ6ITjj6ws1cu15QVTs6a7D8_xCyntYHmwvW1M3EXytrWMFlPhzO8.jpg?r=860"
+                            alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Queen of Tears</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-blue-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://wallpapercave.com/wp/wp13913551.jpg" alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Parasyte : The Grey</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col justify-center items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div class="flex flex-1">
+                        <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQQbzps8XSosQZykNWTQrKkxxz6A6SIVQ0r8gE_zvzbRQ5yHzdHkqvKHeUxmcDipAcp3RIdYzsPHPhamQnAVTxgpkl-Cht8p0pfYWarYZ6ITjj6ws1cu15QVTs6a7D8_xCyntYHmwvW1M3EXytrWMFlPhzO8.jpg?r=860"
+                            alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Queen of Tears</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col justify-center items-start bg-blue-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div>
+                        <img src="https://wallpapercave.com/wp/wp13913551.jpg" alt="product image"
+                            class="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]" />
+                    </div>
+                    <div class="flex flex-col divide-y divide-black">
+                        <b class="mt-5">Parasyte : The Grey</b>
+                        <p>
+                            Antea adicio succedo bestia aro. Adfero accendo suffragium ventus abduco venia. Vulnero
+                            denuo
+                            dedico.
+                        </p>
+                    </div>
+                </div>
+                <!-- end of row -->
+            </main>
+        </div>
     </div>
 </body>
 

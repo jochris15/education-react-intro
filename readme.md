@@ -44,7 +44,7 @@ Demo ini menggunakan Vite dengan template React sebagai permulaannya
 1. `cd <nama_folder>`
 1. `npm install`
 1. `npm run dev`
-1. Ganti Title dan Tambahkan script untuk CSS yang dibutuhkan di `index.html`
+1. Ganti Title dan Jika menggunakan Framework CSS dengan CDN , tambahkan script yang dibutuhkan di `index.html`
 1. Hapus seluruh code yang ada di dalam file src/index.css (file jangan dihapus, akan digunakan ketika mau install framework CSS tailwind etc)
 1. Hapus file src/App.css
 1. Hapus seluruh code yang ada di dalam function App

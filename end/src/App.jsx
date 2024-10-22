@@ -9,88 +9,88 @@ function App() {
 
   return (
     <>
-      {/* Navbar */}
-      <nav className="navbar sticky top-0 z-10 p-3 bg-gray-100 shadow">
-        <div className="navbar-start">
-          <a className="text-2xl font-bold px-6" onClick={() => setPage('login')}>
-            <span className="text-blue-300">Login</span>
-          </a>
-        </div>
-        <div className="navbar-center">
-          <a className="text-2xl font-bold px-6" onClick={() => setPage('home')}>
-            <span className="text-accent">Home</span>
-          </a>
-        </div>
-        <div className="navbar-end">
-          <a className="text-2xl font-bold px-6">
-            <span className="text-red-300">Logout</span>
-          </a>
-        </div>
-      </nav>
+      <div className="p-5">
+        {/* navbar */}
+        <nav className="sticky top-0 z-10 p-3 bg-purple-400 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+          <div>
+            <a className="text-2xl font-bold px-6 cursor-pointer">
+              <span>Home</span>
+            </a>
+            <a className="text-2xl font-bold px-6 cursor-pointer">
+              <span>Front-end Intro</span>
+            </a>
+            <a className="text-2xl font-bold px-6 cursor-pointer">
+              <span>Logout</span>
+            </a>
+          </div>
+        </nav>
+        <br />
 
-      {/* form login */}
-      {page == 'login' && (
-        <>
-          <div className="flex flex-col justify-center bg-base-100 p-20">
-            <div className="w-full p-6 m-auto rounded-lg shadow-md lg:max-w-lg bg-base-200">
-              <h1 className="text-3xl font-semibold text-center text-accent-focus">
-                Log In
-              </h1>
-
-              <form className="space-y-4">
-                <div>
-                  <label className="label">
-                    <span className="text-base label-text">Email</span>
-                  </label>
-                  <input type="text" autoComplete="email" placeholder="Enter Email" className="w-full input input-bordered input-accent" onChange={(e) => setEmail(e.target.value)} />
-                </div>
-                <div>
-                  <label className="label">
-                    <span className="text-base label-text">Password</span>
-                  </label>
-                  <input type="password" autoComplete="current-password" placeholder="Enter Password"
-                    className="w-full input input-bordered input-accent" onChange={(e) => setPassword(e.target.value)} />
-                </div>
-                <div>
-                  <button className="btn btn-accent w-full mt-5">Log In</button>
-                </div>
-              </form>
-
-              <div className="flex flex-col items-center mt-5">
-                <b>Email : {email}</b>
-                <b>Password : {password}</b>
+        {/* login */}
+        <div className="min-h-screen flex items-center justify-center w-full">
+          <div className="rounded-lg px-8 py-6 w-1/3 bg-blue-400 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+            <h1 className="text-2xl font-bold text-center mb-4">Login</h1>
+            <form action="#">
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-sm font-medium ">
+                  Email Address : <b>{email}</b>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="rounded-2xl w-full px-3 py-2 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+                  placeholder="your@email.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
-            </div>
+              <div className="mb-4">
+                <label htmlFor="password" className="block text-sm font-medium">
+                  Password : <b>{password}</b>
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  className="rounded-2xl w-full px-3 py-2 border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+                  placeholder="Enter your password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </div>
+              <button className="w-full mt-5 justify-center py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-gray-700 hover:bg-black shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                Login
+              </button>
+            </form>
           </div>
-        </>
-      )}
+        </div>
 
-      {/* home */}
-      {page == 'home' && (
-        <>
-          <div id="PAGE-HOME" className="p-5">
-            <main className="grid grid-cols-2 gap-5 my-8 bg-white px-10">
-              {products.map((product) => {
-                return (
-                  <>
-                    <div className="card bg-gray-100 shadow-2xl p-5 flex flex-row ">
-                      <div className="flex flex-1">
-                        <img src={product.imgUrl} alt="product image" className="w-3/4" />
-                      </div>
-                      <div className="flex flex-1 flex-col ml-10">
-                        <b className="mb-5">{product.name}</b>
-                        <p>
-                          {product.description}
-                        </p>
-                      </div>
+        {/* home */}
+        <div id="PAGE-HOME" className="min-h-screen flex items-center justify-center">
+          <main className="my-5 bg-white grid grid-cols-4 gap-5">
+            {products.map((product) => {
+              return (
+                <>
+                  {/* card */}
+                  <div className="flex flex-col flex-start items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                    <div>
+                      <img
+                        src={product.imgUrl}
+                        alt="product image"
+                        className="border-2 border-black rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+                      />
                     </div>
-                  </>
-                )
-              })}
-            </main>
-          </div>
-        </>
-      )}
+                    <div className="flex flex-col divide-y divide-black">
+                      <b className="mt-5">{product.name}</b>
+                      <p>
+                        {product.description.length > 100 ? product.description.substring(0, 100) + " . . ." : product.description}
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )
+            })}
+          </main>
+        </div>
+
+      </div>
     </>
   )
 }

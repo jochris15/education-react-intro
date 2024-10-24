@@ -69,7 +69,7 @@ function App() {
               return (
                 <>
                   {/* card */}
-                  <div className="flex flex-col flex-start items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+                  <div className="h-full flex flex-col flex-start items-center bg-yellow-400 border-2 border-black p-5 rounded-2xl shadow-[2px_2px_0px_rgba(0,0,0,1)]">
                     <div>
                       <img
                         src={product.imgUrl}

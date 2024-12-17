@@ -61,9 +61,8 @@ Demo ini menggunakan Vite dengan template React sebagai permulaannya
    1. Memodifikasi input untuk bisa menerima dan mengganti state email dan password
 
 **Part 2**
-   1. Membuat Tampilan yang akan muncul berdasarkan kondisi tertentu (conditional rendering)
-   1. Menambahkan event onClick pada button untuk bisa berpindah halaman
    1. Mengambil data dummy untuk Product (ambil dari product.json)
    1. Membuat "data" reaktif (state) untuk data Product
-   1. Membuat looping element (Rendering List untuk product)
+   1. Kita akan melakukan perubahan yang tadinya state product itu valuenya array of object, kita kan rubah menjadi array of "Card" dan ditampilkan ke react
+   1. Setiap kita melakukan looping di react, kita harus kasih sebuah prop bernama "key" agar react tau perbedaan antara item yang di looping
 

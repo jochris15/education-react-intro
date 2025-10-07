@@ -41,26 +41,28 @@ Demo ini menggunakan Vite dengan template React sebagai permulaannya
 1. Masukkan `<nama_folder>`
 1. Pilih `React`
 1. Pilih `Javascript`
-1. `cd <nama_folder>`
-1. `npm install`
-1. `npm run dev`
+1. Pilih `No` untuk `Use rolldown-vite?`
+1. Pilih `Yes` untuk `Install with npm and start now`
+1. Setelah itu aplikasi langsung di install dan dijalankan, untuk instalasi manual bisa dilakukan dengan pindah ke hasil folder yang sudah dibuat tadi lalu jalankan `npm install` dan `npm run dev`
 1. Ganti Title dan Jika menggunakan Framework CSS dengan CDN , tambahkan script yang dibutuhkan di `index.html`
 1. Hapus seluruh code yang ada di dalam file src/index.css (file jangan dihapus, akan digunakan ketika mau install framework CSS tailwind etc)
 1. Hapus file src/App.css
 1. Hapus seluruh code yang ada di dalam function App
 1. Hapus seluruh import yang tidak digunakan
-1. Copy isi dari body yang ada di template (`template.html`) ke `src/App.jsx`
-1. Ganti cara untuk melakukan comment (dari HTML ke JSX)
-1. Ganti cara untuk menggunakan class (class -> className)
+1. Copy isi dari body yang ada di template (`template.html`) lalu ubah format `HTML` menjadi `JSX` (bisa gunakan [tool ini](https://transform.tools/html-to-jsx))
+1. Paste di dalam return function App
     
 **Part 1**
-   1. Import function yang dibutuhkan untuk mengakses data reaktif (state) pada React
-   1. Membuat "data" reaktif (state) untuk email dan password
-   1. Tampilkan isi state email & password
-   1. Membuat fungsi untuk membaca perubahan input
-   1. Memodifikasi input untuk bisa menerima dan mengganti state email dan password
+   1. Di part ini kita akan membuat variabel reaktif (state) untuk menyimpan hasil input dari email dan password
+   1. Import function yang dibutuhkan untuk mengakses variabel reaktif (state) pada React
+   1. Membuat "data" reaktif (state) untuk email dan password dengan menggunakan `useState()`
+   1. Tampilkan isi state email & password di dalam html dengan menggunakan curly braces `{}`
+   1. Menambahkan event handler `onChange` pada input email dan password
+   1. Event handler hanya menerima callback function, jadi kita buat function callback di dalamnya
+   1. Setiap ada perubahan di input email dan password, kita akan mengubah value dari state email dan password dengan menggunakan function setter yang sudah dibuat menggunakan `useState()`
 
 **Part 2**
+   1. Di part ini kita akan menampilkan data dari `product.json` ke dalam bentuk card
    1. Mengambil data dummy untuk Product (ambil dari product.json)
    1. Membuat "data" reaktif (state) untuk data Product
    1. Kita akan melakukan perubahan yang tadinya state product itu valuenya array of object, kita kan rubah menjadi array of "Card" dan ditampilkan ke react

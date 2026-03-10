@@ -1,11 +1,4 @@
 # React Intro
-
-## Why use React?
-1. Component based, reusable component sehingga lebih dinamis dan lebih mudah di maintain
-2. Flexible, karena strukturnya modular
-3. Performance, secara performance bisa menjalankan aplikasi yang kompleks dengan cepat
-4. Popular, sehingga community supportnya banyak 
-
 ## What is ReactJS ?
 
 [Dokumentasi React](https://react.dev/)
@@ -22,6 +15,11 @@ Secara garis besarnya, Library umumnya tidak memiliki fitur yang wah dibandingka
 
 Jadi bersiaplah, ketika kita menggunakan React, kita akan bermain dengan cukup banyak standar HTML pada umumnya
 
+## Why use React?
+1. Component based, reusable component sehingga lebih dinamis dan lebih mudah di maintain
+2. Flexible, karena strukturnya modular
+3. Performance, secara performance bisa menjalankan aplikasi yang kompleks dengan cepat
+4. Popular, sehingga community supportnya banyak 
 
 ## What is JSX?
 [Dokumentasi JSX](https://react.dev/learn/writing-markup-with-jsx)

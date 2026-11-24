@@ -50,19 +50,14 @@ Demo ini menggunakan Vite dengan template React sebagai permulaannya
 1. Copy isi dari body yang ada di template (`template.html`) lalu ubah format `HTML` menjadi `JSX` (bisa gunakan [tool ini](https://transform.tools/html-to-jsx))
 1. Paste di dalam return function App
     
-**Part 1**
-   1. Di part ini kita akan membuat variabel reaktif (state) untuk menyimpan hasil input dari email dan password
-   1. Import function yang dibutuhkan untuk mengakses variabel reaktif (state) pada React
-   1. Membuat "data" reaktif (state) untuk email dan password dengan menggunakan `useState()`
-   1. Tampilkan isi state email & password di dalam html dengan menggunakan curly braces `{}`
-   1. Menambahkan event handler `onChange` pada input email dan password
-   1. Event handler hanya menerima callback function, jadi kita buat function callback di dalamnya
-   1. Setiap ada perubahan di input email dan password, kita akan mengubah value dari state email dan password dengan menggunakan function setter yang sudah dibuat menggunakan `useState()`
-
-**Part 2**
-   1. Di part ini kita akan menampilkan data dari `product.json` ke dalam bentuk card
-   1. Mengambil data dummy untuk Product (ambil dari product.json)
-   1. Membuat "data" reaktif (state) untuk data Product
-   1. Kita akan melakukan perubahan yang tadinya state product itu valuenya array of object, kita kan rubah menjadi array of "Card" dan ditampilkan ke react
-   1. Setiap kita melakukan looping di react, kita harus kasih sebuah prop bernama "key" agar react tau perbedaan antara item yang di looping
-
+**Components**
+1. Buatlah folder bernama `components` yang akan digunakan untuk penempatan component yang bersifat reusable seperti `Navbar`
+1. Buatlah folder bernama `views` yang akan digunakan untuk penempatan component yang bersifat halaman seperti `Login` & `Home`
+1. Pindahkan kodingan navbar, login, dan home ke file jsx mereka masing2 dan buat function react disana 
+1. Dalam module.js ada 2 cara untuk melakukan export :
+   - `export` = seperti module.exports menggunakan object, bisa export item lebih dari 1
+   (importnya wajib di destruct karena itemnya lebih dari 1)
+   - `export default` = seperti module.exports tanpa object, hanya bisa export 1 item (importnya bisa langsung ditampung di variabel baru)
+1. Karena biasa 1 react component hanya terdiri dari 1 function react, maka kita bisa gunakan `export default` 
+1. Panggil `Navbar` di `Home.jsx`
+1. Manfaatkan `App.jsx` menjadi file utama untuk tempat pemanggilan file `Home.jsx` dan `Login.jsx`

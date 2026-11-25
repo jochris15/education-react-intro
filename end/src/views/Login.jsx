@@ -15,6 +15,7 @@ export default function Login() {
                                 id="email"
                                 className="bg-white rounded-2xl w-full px-3 py-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)]"
                                 placeholder="your@email.com"
+                                autoComplete="current-email"
                             />
                         </div>
                         <div className="mb-4">
@@ -26,6 +27,7 @@ export default function Login() {
                                 id="password"
                                 className="bg-white rounded-2xl w-full px-3 py-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)]"
                                 placeholder="Enter your password"
+                                autoComplete="current-password"
                             />
                         </div>
                         <button className="w-full mt-5 justify-center py-2 px-4 border-2 border-black rounded-2xl text-sm font-medium text-white bg-gray-700 hover:bg-black shadow-[2px_2px_0px_rgba(0,0,0,1)]">
